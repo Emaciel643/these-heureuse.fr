@@ -19,7 +19,7 @@ pagedesc: Ici, on expliquera les méthodes utilisées pour mesurer la consommati
     <h3>
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h3>
-    <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> — {{ post | timeToRead }} de lecture</p>
+    <p><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></p>
     <p>{{ post.page.excerpt }}</p>
   </article>
 {% endfor %}

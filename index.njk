@@ -1,41 +1,18 @@
 ---
 layout: base-layout.njk
 img: hp-visualiser.png
-pagetitle: Visualiser les consommations électriques
-pagedesc: Simple curiosité, envie de réduire ses factures et son empreinte carbone ou d'optimiser son auto-consommation photovoltaïque ; toutes les raisons sont bonnes pour regarder la consommation électrique des appareils du quotidien.
+pagetitle: Visualiser les chats
+pagedesc: bonjour les amis.
 linkFeed: true
 ---
 
 <div id="intro">
   <div>
-    <h1>Visualiser les consommations électriques</h1>
-    <p>Simple curiosité, envie de réduire ses factures et son empreinte carbone ou d'optimiser son auto-consommation photovoltaïque ; toutes les raisons sont bonnes pour regarder la consommation électrique des appareils du quotidien.</p>
+    <h1>test</h1>
+    <p>La recherche est un métier de passion !</p>
   </div>
-  {% image "./images/hp-visualiser.png", "Des hommes s'affairant autour d'un appareil électrique avec des cadrants", "580w", 580, false %}
+  {% image "./images/test.jpg", "le chat", "580w", 580, false %}
 </div>
 
-<div id="Articles">
-  <h2><a href="{{ '/posts/' | url }}">Articles récents</a></h2>
-  <div>
-{% for post in collections.post | reverse | limit(3) %}
-    <div>
-      <h3><a href="{{ post.url | url }}">{% if post.data.img %}{% image "./images/" + post.data.img, "Image représentant l'article " + post.data.title, "380w", 380 %}{% else %}{% image "./images/hp-missing.png", "Image générique", "380w", 380 %}{% endif %}
-      {{ post.data.title }}</a></h3>
-      <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
-      <p>{{ post.page.excerpt }}</p>
-    </div>
-{% endfor %}
-  </div>
-</div>
-
-<div id="Objets">
-  <h2><a href="{{ '/tests/' | url }}">Objets testés</a></h2>
-  <div>
-{% for test in collections.test | reverse | limit(6) %}
-    <a href="{{ test.url | url }}"><h3>{{ test.data.pagetitle }}</h3>{% image "./images/" + test.data.img, "Image représentant " + test.data.title, "392w", 392 %}</a>
-{% endfor %}
-  </div>
-</div>
-
-<div id="Join"><h2>Mesurer l'énergie consommée par les objets du quotidien.</h2><div>Rendons les consommations visibles !</div></div>
-<div id="ImageBanner" aria-label="people sitting down near table with assorted laptop computers"></div>
+<!--<div id="Join"><h2>Pour un quotidien heureux en thèse.</h2><div>Lisez ce site !</div></div>
+<div id="ImageBanner" aria-label="people sitting down near table with assorted laptop computers"></div>-->

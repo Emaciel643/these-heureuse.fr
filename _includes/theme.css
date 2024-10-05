@@ -1,3 +1,6 @@
+
+
+
 @font-face {
   font-family: 'Bai Jamjuree';
   font-style: normal;
@@ -103,7 +106,7 @@ header {
 }
 
 h1, h2, h3 {
-  font-family: Bai Jamjuree;
+  font-family: Afacad Flux, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -262,6 +265,7 @@ p {
 #Join h2 {
   margin-bottom: 12px;
 }
+/*
 #ImageBanner {
   background: url("img/bg-home.jpg");
   background-position: center;
@@ -270,6 +274,7 @@ p {
   height: 320px;
   width: 100%;
 }
+*/
 
 #Footer {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -327,117 +332,9 @@ article > h1 {
   margin-bottom: 1em;
 }
 
-.profile {
-  color: #042f2e;
-  border-radius: 0px;
-  overflow: hidden;
-  margin-bottom: 1em;
-}
-.profile > div {
-  padding-top: 1px;
-  border-left: 5px solid #064e3b88;
-  border-right: 5px solid #064e3b88;
-  position: relative;
-  padding-bottom: calc(5% - 1px);
-}
-.profile > div:first-of-type {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top: 5px solid #064e3b88;
-  overflow: hidden;
-}
-.profile > div + div {
-  border-top: solid 1.5px #064e3b88;
-}
-.profile > div > svg {
-  position: absolute;
-}
-.profile > div > svg > path {
-  fill: #064e3b88;
-  stroke: #042f2e;
-  stroke-width: 6px;
-  stroke-linejoin: bevel;
-}
-.profile > p {
-  font-weight: bold;
-  margin: 0;
-  background-color: #064e3b88;
-  border: 5px solid transparent;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top: none;
-}
-.profile > p:before {
-  border-top: 1px solid #e5e7eb;
-  display: block;
-  content: "";
-}
 img {
   max-width: 100%;
   height: auto;
-}
-
-table {
-  margin-top: .5em;
-  width: 100%;
-  float:left;
-  background-color: #064e3b88;
-  border-radius: 8px;
-  margin-right: 0.25em;
-}
-.power {
-  margin-right: 0;
-}
-.power td {
-  text-align: center;
-}
-.power a {
-  color: inherit;
-}
-
-@media (min-width: 992px) {
-  table{
-    width: 50%;
-    width: calc(50% - 0.25em);
-  }
-  .power {
-    margin-left: 0.25em;
-  }
-}
-
-table td {
-  padding: .1em .5em;
-  background-color: #042f2e;
-  color: #e5e7eb;
-}
-table td:last-of-type {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-table.power tr:last-of-type > td:first-of-type {
-  border-radius: 0px;
-}
-table.power tr:first-of-type > td:last-of-type {
-  border-bottom-right-radius: 0px;
-}
-table.power tr:last-of-type > td:last-of-type {
-  border-top-right-radius: 0px;
-}
-.profiler-link {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="%23042f2e" fill-opacity="context-fill-opacity"><path d="M8 0A8 8 0 0 0 .78 11.43a1 1 0 1 0 1.8-.86 5.94 5.94 0 0 1 0-5.17 6 6 0 0 1 10.83 5.17 1 1 0 1 0 1.81.86A7.99 7.99 0 0 0 8 0M10 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0M10.96 6.7a.5.5 0 1 0-.92-.4l-1.7 3.73a2 2 0 0 1 .92.41l1.7-3.73z"/></svg>');
-  float: right;
-  width: 26px;
-  height: 26px;
-  padding: 5px;
-}
-.profiler-link:hover {
-  background-color: #73737344;
-}
-table.power + p {
-  clear: both;
-  padding-top: 1em;
 }
 
 article.list {

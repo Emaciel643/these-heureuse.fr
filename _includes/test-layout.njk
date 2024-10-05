@@ -1,12 +1,12 @@
 ---
 layout: base-layout.njk
 eleventyComputed:
-  pagetitle: "Combien consomme {{ title }} ?"
+  pagetitle: "{{ title }}"
   pagedesc: "{{ page.excerpt | trim }}"
 ---
 <article>
 <h1>{{ pagetitle }}</h1>
-<p><time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time> — {{ content | timeToRead }} de lecture</p>
+<p><time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time></p>
 {{ content | safe }}
 </article>
 {% set previous = collections.test | getPreviousCollectionItem(page) %}
